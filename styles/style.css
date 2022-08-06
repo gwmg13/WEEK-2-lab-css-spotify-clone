@@ -1,8 +1,145 @@
-/*
-Colors:
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+header {
+    height: 50px;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
-*/
+.logo-header {
+    max-height: 40px;
+    padding-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 10px;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: 'Roboto';
+}
+
+
+
+@media screen and (min-width: 280px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.section-image {
+    background: url('../images/landing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-image .section-titulo {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.section-image .section-subtitulo {
+    color: white; 
+    font-size: small;
+    font-family: 'Roboto';
+    width: 50%;
+    text-align: center;
+}
+
+
+
+
+/* body {
+    font-size: 14;
+}
+
+.primero {
+    position: firex;
+    padding: 4px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    border: 1px;
+    solid black;
+    display: flex;
+
+
+    grid-template-areas: " . . . . ";
+
+
+    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: 2em;
+    height: 140px;
+}
+
+.primero>div {
+    width: 100px;
+    height: 40px;
+    border: 1px solid red;
+}
+
+.title {
+    flex-grow: 2;
+}
+
+.dos {
+    flex-shrink: 2;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    border: 10 px solid black;
+    background-color: blue;
+    font-size: 4em;
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: width .15 ease-in;
+    transition: all 2s ease-in;
+    animation-name: mi-animacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.caja:hover {
+    width: 200px;
+    background-color: yellow;
+    border-color: red;
+    transition: width 2s ease-in;
+    transition: width 15s ease-out;
+    background-color: 2s ease-out;
+    transform: 1s;
+}
+
+@keyframes mi-animacion {
+    0% width: 100px;
+}
+
+180% {
+    background-color: blue;
+    width: 50x;
+} */
